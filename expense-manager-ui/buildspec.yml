@@ -21,8 +21,11 @@ phases:
       - echo in postbuild
       - pwd
       - ls -la
+      - cd dist/
+      - ls -la
+      - cd ..
 artifacts:
   files:
     - "**/*"
-  base-directory: dist/expense-manager
+  base-directory: dist
   discard-paths: no
