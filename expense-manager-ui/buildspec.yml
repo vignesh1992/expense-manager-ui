@@ -7,6 +7,7 @@ phases:
     commands:
       - echo installing dependencies...
       - pwd
+      - cd expense-manager-ui/ 
       - pwd
       - npm install
       - npm install -g @angular/cli
@@ -27,4 +28,4 @@ artifacts:
   files:
     - "**/*"
   base-directory: dist/expense-manager
-  discard-paths: no
+  discard-paths: yes
