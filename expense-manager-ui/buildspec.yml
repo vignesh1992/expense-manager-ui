@@ -27,5 +27,5 @@ phases:
 artifacts:
   files:
     - "**/*"
-  base-directory: dist/expense-manager
+  base-directory: 'dist/expense-manager'
   discard-paths: yes
