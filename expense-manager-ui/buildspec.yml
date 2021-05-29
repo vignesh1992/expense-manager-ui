@@ -19,9 +19,9 @@ phases:
     commands:
       # - echo testing...
       # - echo building...
-      - ng build --prod
+      -   ng build --prod
 artifacts:
   files:
     - "**/*"
   discard-paths: no
-  base-directory: dist/expense-manager-ui
+  base-directory: dist/expense-manager
