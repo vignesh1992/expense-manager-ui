@@ -24,4 +24,4 @@ artifacts:
   files:
     - "**/*"
   discard-paths: no
-  base-directory: dist/expense-manager
+  base-directory: cd expense-manager-ui/ && dist/expense-manager
