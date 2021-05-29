@@ -3,6 +3,7 @@ version: 0.1
 phases:
   install:
     commands:
+      - pwd
       - echo installing nodejs...
       - curl -sL https://deb.nodesource.com/setup_12.x | bash -
       - apt-get install -y nodejs
@@ -13,6 +14,8 @@ phases:
   pre_build:
     commands:
       - echo installing dependencies...
+      - pwd
+      - cd expense-manager-ui/
       - npm i -g @angular/cli
       - npm install
   build:
