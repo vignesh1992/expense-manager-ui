@@ -6,10 +6,17 @@ phases:
       nodejs: 14
     commands:
       - echo installing dependencies...
-      - cd expense-manager-ui/ && npm install && npm install -g @angular/cli
+      - pwd
+      - cd expense-manager-ui/ 
+      - pwd
+      - npm install
+      - npm install -g @angular/cli
   build:
     commands:
-      - cd expense-manager-ui/ && ng build --prod
+      - cd expense-manager-ui/
+      - echo attempting to build
+      - pwd
+      - ng build --prod
 artifacts:
   files:
     - "**/*"
