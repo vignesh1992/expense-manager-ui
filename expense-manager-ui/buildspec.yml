@@ -15,14 +15,16 @@ phases:
     commands:
       - echo installing dependencies...
       - pwd
-      - cd expense-manager-ui/
+      - cd expense-manager-ui
+      - pwd
       - npm i -g @angular/cli
       - npm install
   build:
     commands:
       # - echo testing...
       # - echo building...
-      -   ng build --prod
+      - cd expense-manager-ui/
+      - ng build --prod
 artifacts:
   files:
     - "**/*"
