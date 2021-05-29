@@ -1,9 +1,9 @@
-version: 0.1
+version: 0.2
 
 phases:
   install:
     runtime-versions:
-            nodejs: 16
+      nodejs: 16
     commands:
       - echo installing dependencies...
       - cd expense-manager-ui/ && npm install && npm install -g @angular/cli
