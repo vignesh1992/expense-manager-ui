@@ -13,10 +13,9 @@ phases:
       - npm install -g @angular/cli
   build:
     commands:
-      - cd expense-manager-ui/
       - echo attempting to build
       - pwd
-      - ng build --prod
+      - cd expense-manager-ui/ && ng build --prod
 artifacts:
   files:
     - "**/*"
